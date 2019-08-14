@@ -7,25 +7,25 @@
   "active_key": "your_private_active_key",
   "auto_claim_rewards" : true,
   "post_rewards_withdrawal_account": null,
-  "vote_weight": 10000,
-	"whitelist_only": true,
+  "vote_weight": 1500,
+	"whitelist_only": false,
 	"whitelist_location": "whitelist.txt",
-	"comment_location": "comment.md",
+	"comment_location": "",
 	"resteem": true,
 	"flag_signal_accounts": ["spaminator", "cheetah", "steemcleaners", "mack-bot"],
-	"blacklisted_tags": ["nsfw"],
-	"whitelisted_tags": [],
+	"blacklisted_tags": ["nsfw", "actifit"],
+	"whitelisted_tags": ["upfundme"],
   "api": {
     "enabled": true,
     "port": 3100
   },
   "membership": {
-    "start_date": "2/20/2018",
-    "membership_period_days": 30,
-    "delegation_vests": 60000,
-    "full_delegation_vests": 120000,
-    "dues_steem": 1,
-    "dues_steem_no_delegation": 2
+    "start_date": "8/14/2019",
+    "membership_period_days": 28,
+    "delegation_vests": 94000,
+    "full_delegation_vests": 950000,
+    "dues_steem": 0,
+    "dues_steem_no_delegation": 0
   },
 	"transfer_memos": {
 		"whitelist_only": "This bot is for community members only. Please contact the community leaders to get added to the whitelist in order to join.",
