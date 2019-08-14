@@ -4,7 +4,7 @@ This is a voting bot for communities on the Steem platform. Members of the commu
 
 ## Installation
 ```
-$ git clone https://github.com/MattyIce/communitybot.git
+$ git clone https://github.com/steemtm/communitybot.git
 $ npm install
 ```
 
@@ -24,31 +24,31 @@ Then set the following options in config.json:
   "posting_key": "your_private_posting_key",
   "active_key": "your_private_active_key",
   "auto_claim_rewards" : true,
-  "post_rewards_withdrawal_account": null,
-  "vote_weight": 10000,
-	"whitelist_only": true,
+  "post_rewards_withdrawal_account": upfundme,
+  "vote_weight": 1000,
+	"whitelist_only": false,
 	"whitelist_location": "whitelist.txt",
-	"comment_location": "comment.md",
-	"resteem": true,
+	"comment_location": "",
+	"resteem": false,
 	"flag_signal_accounts": ["spaminator", "cheetah", "steemcleaners", "mack-bot"],
-	"blacklisted_tags": ["nsfw"],
-	"whitelisted_tags": ["your-community-tag"],
+	"blacklisted_tags": ["nsfw", "actifit"],
+	"whitelisted_tags": ["upfundme"],
   "api": {
     "enabled": true,
     "port": 3100
   },
   "membership": {
     "start_date": "2/20/2018",  // Date when membership starts
-    "membership_period_days": 30, // The length of time for which the dues pay
+    "membership_period_days": 28, // The length of time for which the dues pay
     "delegation_vests": 60000,  // Min amount of delegation required for membership
-    "full_delegation_vests": 120000,  // Min amount of delegation required for membership with no dues
-    "dues_steem": 1,  // Dues required if delegation is less than "full_delegation_vests"
-    "dues_steem_no_delegation": 2 // Dues required of delegation is less than "delegation_vests"
+    "full_delegation_vests": 95000,  // Min amount of delegation required for membership with no dues
+    "dues_steem": 1000,  // Dues required if delegation is less than "full_delegation_vests"
+    "dues_steem_no_delegation": 2000 // Dues required of delegation is less than "delegation_vests"
   },
 	"transfer_memos": {
 		"whitelist_only": "This bot is for community members only. Please contact the community leaders to get added to the whitelist in order to join.",
 		"member_valid_thru": "Membership updated for @{to}. Membership valid through: {tag}.",
-		"member_full_delegation": "Membership updated for @{to}. Full amount delegated, membership is valid indefinitely while delegation remains."
+		"member_full_delegation": "Full amount delegated, membership is valid indefinitely while delegation remains. You will receive upvotes in STEEM on your #upfundme posts when the bidbot is idle."
 	}
 }
 ```
